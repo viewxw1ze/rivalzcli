@@ -35,7 +35,7 @@ if [[ ! "$response" =~ ^[Yy]$ ]]; then
 fi
 
 echo -e "${BOLD}${DARK_YELLOW}Updating system dependencies...${RESET}"
-execute_with_prompt "sudo apt update -y && sudo apt upgrade -y"
+execute_with_prompt "sudo apt update -y"
 echo
 
 echo -e "${BOLD}${DARK_YELLOW}Installing curl...${RESET}"
